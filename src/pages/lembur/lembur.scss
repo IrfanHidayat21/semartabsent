@@ -1,0 +1,73 @@
+page-lembur {
+    ion-content {
+        background-color: #F5F6F8 !important;
+    }
+    ion-navbar {
+        color: white !important;
+    }
+
+    .p-title {
+        color: #727C8E;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .checkbox1 {
+        position: absolute;
+        --width: 10px !important;
+
+
+    }
+
+    .p-in {
+        color: black;
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+    
+    }
+
+    
+    .p-out {
+        color: black;
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+ 
+    }
+
+    .note-date {
+        position: absolute;
+        right: 15px;
+        top:10px;
+    }
+
+    .card {
+        margin-top: 15px !important;
+        box-shadow: 0px 4px 8px #E7EAF0;
+        border-radius: 10px !important;
+        background-color: #ffffff;
+        width: 99%;
+        max-height: 80%;
+        margin: auto;
+        margin-bottom: 15px;
+        overflow-y: auto;
+
+    }
+
+    .div-card {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .card > button {
+        background-color: transparent;
+    }
+
+    .btn-add-lembur {
+        border-radius: 30px;
+        background: linear-gradient(90deg, #00A757, #98CA3B);
+
+    }
+
+    
+}

@@ -1,0 +1,37 @@
+<!--
+  Generated template for the lemburPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <ion-title>Lembur</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <p class="p-title">AKTIVITAS LEMBUR</p>
+    <ion-list class="card">
+      <div class="div-card">
+      <button ion-item >
+          <!-- <ion-icon name="checkbox" item-start color="primary"></ion-icon> -->
+          <ion-icon name="square"item-start color="icon"></ion-icon>
+            <p class="p-in"><b>Masuk</b> <span class="span-in">: 08.00 AM</span></p>
+            <p class="p-out"><b>Keluar</b> <span class="span-out">: 05.00 PM</span></p>
+            <ion-note class="note-date">28 Dec</ion-note>
+        </button>
+        <button ion-item >
+            <ion-icon name="checkbox" item-start color="primary"></ion-icon>
+            <!-- <ion-icon name="square"item-start color="icon"></ion-icon> -->
+              <p class="p-in"><b>Masuk</b> <span class="span-in">: 08.00 AM</span></p>
+              <p class="p-out"><b>Keluar</b> <span class="span-out">: 05.00 PM</span></p>
+              <ion-note class="note-date">28 Dec</ion-note>
+          </button>
+      </div>
+  </ion-list>
+  <button ion-button full class="btn-add-lembur" (click)="pushPage('AddlemburPage')">
+      JADWAL LEMBUR
+  </button>
+  </ion-content>
+  

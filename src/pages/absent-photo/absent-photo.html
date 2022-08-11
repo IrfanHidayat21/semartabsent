@@ -1,0 +1,22 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>absentPhoto</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content class="bg">
+  <div class="div_foto">
+    <img [src]="captureDataUrl" *ngIf="captureDataUrl" class="foto">
+  </div>
+  <div class="btn2" *ngIf="!captureDataUrl">
+    <button ion-button clear icon-only class="btnCam2" (click)="pickImage()">
+      <ion-icon name="reverse-camera" color="dark"></ion-icon>
+    </button>
+  </div>
+  <div class="btn" *ngIf="captureDataUrl">
+      <button ion-button clear icon-only class="btnCam" (click)="pickImage()">
+          <ion-icon name="reverse-camera" color="light"></ion-icon>
+      </button>
+      <button ion-button color="light" class="btnAbs" round (click)="absen()">Absent</button>
+  </div>
+</ion-content>

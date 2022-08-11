@@ -1,0 +1,34 @@
+page-history {
+    // ion-content {
+    //     background-color: #F5F6F8 !important;
+    // }
+    ion-navbar {
+        color: white !important;
+    }
+    ion-item-divider {
+        color: #00A757 !important;
+        font-weight: bold;
+    }
+    ion-item {
+        font-size: 14px !important;
+    }
+    .kosong {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        margin-top: -40%;
+        left: 10%;
+    }
+    .kosong  > img {
+        width: 160px;
+        height: 100px;
+        object-fit: contain;
+        margin: auto;
+        display: flex;
+        opacity: 0.6;
+    }
+    .kosong  > p {
+        text-align: center;
+        opacity: 0.8;
+    }
+}

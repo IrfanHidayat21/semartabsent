@@ -1,0 +1,28 @@
+<ion-content padding>
+  <div class="div-Logo">
+    <img src="../../assets/imgs/LogoSemartAbsent.png" class="logo">
+  </div>
+  <div class="div1">
+    <p>Selamat Datang</p>
+  </div>
+  <div class="div-Device">
+      <button ion-button clear icon-only (click)="copyText()">
+          <ion-icon color="icon" name="copy"></ion-icon>
+        </button>
+    <p class="p1">Device ID</p>
+    <p class="p2">{{deviceId}}</p>
+  </div>
+  <div class="btn">
+      <button ion-button round (click)="connect()">Connect</button>
+  </div>
+  <!-- <div class="div2">
+    <p>Tekan tombol diatas untuk melanjutkan</p>
+  </div> -->
+  <div class="bgFoot">
+    <div class="footer">
+      <div class="foot1"><img src="../../assets/imgs/logo_kemenag-min.png" class="logo"></div>
+      <div class="foot">Kementerian Agama Republik Indonesia</div>
+    </div>
+  </div>
+ 
+</ion-content>

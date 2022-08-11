@@ -1,0 +1,60 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      SEmart Absent
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+      <div class="div-data">
+          <div class="div-Logo">
+              <img *ngIf="!image"  src="../../assets/imgs/LogoSemartAbsent.png" class="logo">
+              <img *ngIf="image" [src]="image" class="logo">
+          </div>
+          <div class="data">
+            <p class="departemen">{{departemen}}</p>
+            <div class="p1"><p class="s1">Code</p> <p class="s2">{{id}}</p></div>
+            <div class="p1"><p class="s1">Nama</p> <p class="s2">{{nama}}</p></div>
+            <div class="p1"><p class="s1">Jabatan</p> <p class="s2">{{jabatan}}</p></div>
+            
+          </div>
+      </div>
+      
+      <div class="div-Device">
+        <button ion-button clear icon-only (click)="copyText()">
+            <ion-icon color="icon" name="copy"></ion-icon>
+          </button>
+        <p class="p1">Device ID</p>
+        <p class="p2">{{deviceId}}</p>
+        
+      </div>
+      <div class="btn">
+          <button ion-button round (click)="scan()">Scan</button>
+      </div>
+       <ion-list class="card">
+            <button ion-item (click)="pushPage('CutiPage')">
+                <img src="../../assets/imgs/cuti.png" item-start class="imgMenu">
+                  Cuti
+                <ion-icon name="ios-arrow-dropright-circle" item-end color="icon"></ion-icon>
+              </button>
+              <button ion-item (click)="pushPage('LemburPage')">
+                <img src="../../assets/imgs/lembur.png" item-start class="imgMenu">
+                  Lembur
+                <ion-icon name="ios-arrow-dropright-circle" item-end color="icon"></ion-icon>
+              </button>
+              <button ion-item (click)="pushPage('HistoryPage')">
+                  <img src="../../assets/imgs/history.png" item-start class="imgMenu">
+                    Histori
+                  <ion-icon name="ios-arrow-dropright-circle" item-end color="icon"></ion-icon>
+              </button>
+        </ion-list>
+    
+  <!-- <div class="bgFoot">
+    <div class="footer">
+      <div class="foot1"><img src="../../assets/imgs/logo_kemenag-min.png" class="logo"></div>
+      <div class="foot">Kementerian Agama Republik Indonesia</div>
+    </div>
+  </div> -->
+ 
+</ion-content>

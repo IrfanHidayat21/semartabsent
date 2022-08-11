@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>history</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="kosong" *ngIf="history.length == 0" >
+    <img src="../../assets/imgs/history.png">
+    <p>Tidak Ada Data</p>
+  </div>
+  <ion-item-group *ngFor="let item of history" >
+    <ion-item-divider color="light">{{item.masuk | date: 'd MMM y'}}</ion-item-divider>
+    <ion-item>Anda telah mengisi jam masuk {{item.masuk | date: 'h:mm a'}}</ion-item>
+    <ion-item *ngIf="item.keluar != null" >Anda telah mengisi jam keluar {{item.keluar | date: 'h:mm a'}}</ion-item>
+  </ion-item-group>
+</ion-content>

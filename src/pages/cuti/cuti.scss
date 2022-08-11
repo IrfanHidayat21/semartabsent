@@ -1,0 +1,77 @@
+page-cuti {
+    ion-content {
+        background-color: #F5F6F8 !important;
+    }
+    ion-navbar {
+        color: white !important;
+    }
+
+    .p-title {
+        color: #727C8E;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .p-date {
+        color: black;
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .p-desc {
+        color: #727C8E;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+    }
+    .card {
+        margin-top: 15px !important;
+        box-shadow: 0px 4px 8px #E7EAF0;
+        border-radius: 10px !important;
+        background-color: #ffffff;
+        width: 99%;
+        max-height: 80%;
+        margin: auto;
+        margin-bottom: 15px;
+        overflow-y: auto;
+
+    }
+
+    .div-card {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .card > button {
+        background-color: transparent;
+    }
+    .imgMenu {
+        width: 20px;
+        height: auto;
+    }
+
+    .btn-add-cuti {
+        border-radius: 30px;
+        background: linear-gradient(90deg, #00A757, #98CA3B);
+
+    }
+    .kosong {
+        width: 80%;
+        margin: auto;
+        margin-top: 8%;
+   
+    }
+    .kosong  > img {
+        width: 160px;
+        height: 100px;
+        object-fit: contain;
+        margin: auto;
+        display: flex;
+        opacity: 0.6;
+    }
+    .kosong  > p {
+        text-align: center;
+        opacity: 0.8;
+    }
+}

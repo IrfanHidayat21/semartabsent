@@ -1,0 +1,31 @@
+<!--
+  Generated template for the CutiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cuti</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="p-title">AKTIVITAS CUTI</p>
+  <ion-list class="card">
+    <div class="div-card">
+        <div class="kosong" *ngIf="cuti.length == 0" >
+            <img src="../../assets/imgs/cuti.png">
+            <p>Tidak Ada Data</p>
+        </div>
+        <button ion-item *ngFor="let item of cuti" >
+          <p class="p-date">{{item.leave_date | date: 'd MMM y'}}</p>
+          <p class="p-desc">{{item.code}} - {{item.amount}} Hari</p>
+       </button>
+    </div>
+</ion-list>
+
+<button ion-button full class="btn-add-cuti" (click)="pushPage('AddcutiPage')">
+    AJUKAN CUTI
+</button>
+</ion-content>

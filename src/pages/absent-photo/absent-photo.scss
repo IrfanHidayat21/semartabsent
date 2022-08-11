@@ -1,0 +1,40 @@
+page-absent-photo {
+    .bg{
+        background-color: #f0efef;
+    }
+    .div_foto {
+        height: 100%;
+        width: 100%;
+
+    }
+    .div_foto > .foto {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .btn {
+       position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+    .btn > .btnAbs {
+        width: 75px;
+        height: 34px;
+        font-size: 12px;
+        position: absolute;
+        right: 15px;
+    }
+    .btn > .btnCam {
+        font-size: 23px;
+    }
+    .btn2 {
+        
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        margin-left: -35px;
+    }
+    .btn2 > .btnCam2 {
+        font-size: 23px;
+    }
+}
